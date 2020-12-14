@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.korea.data.mapper.GreenMapper"> 
+ 
+ 	<select id="getGreen" resultType="com.korea.data.domain.GreenVO">
+ 		select * from tbl_green 
+ 	</select>
+ 	
+ 	<select id="getOne" resultType="com.korea.data.domain.GreenVO">
+ 		select * from tbl_green where gid=#{gid}
+ 	</select>
+ 	
+	<update id="update">
+ 		update tbl_green set name=#{name}, korea=#{korea}, math=#{math} where gid=#{gid}
+ 	</update>
+ 	
+ 	
+ 	<insert id="insert">
+ 		insert into tbl_green values(seq_green.nextval, #{name}, #{korea}, #{math})
+ 	</insert>
+	
+	<delete id="delete">
+		delete from tbl_green where gid = #{gid} 
+	</delete>
+</mapper>

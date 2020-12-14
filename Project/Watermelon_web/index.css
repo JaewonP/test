@@ -1,0 +1,1659 @@
+body {
+  width: 1080px;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+button,
+button:focus {
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.hr0 {
+  border: 0;
+  height: 4px;
+  background: rgb(57, 216, 25);
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  padding-top: 10px;
+}
+header .top_left {
+  margin: 0;
+  color: gray;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 70px;
+  font-size: 13px;
+}
+header .header_right {
+  width: 270px;
+  display: flex;
+  align-items: center;
+}
+header div .fa-ticket-alt {
+  color: rgb(57, 216, 25);
+  padding-right: 10px;
+}
+header div .header1_menu {
+  color: gray;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 13px;
+}
+.hr1 {
+  border: 0;
+  height: 1px;
+  background: rgb(235, 232, 232);
+}
+.header2 {
+  display: flex;
+  align-items: center;
+}
+/*
+.header2 .header_title .search_input {
+  background: url(img/search-solid.svg) no-repeat scroll 270px;
+  height: 30px;
+  border-radius: 50px;
+} */
+.header2 .header_title {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  margin-top: 35px;
+}
+.header2 .header_title .search_input {
+  margin-top: 12px;
+  margin-left: 13px;
+}
+.header2 .header_title .search_input[type="text"] {
+  background-image: url(img/search-solid.svg);
+  background-position: 300px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  color: rgb(57, 216, 25);
+  height: 30px;
+  border-radius: 50px;
+}
+.header2 .header_title a {
+  text-decoration: none;
+  background-color: rgb(70, 233, 37);
+  border-radius: 10px;
+  color: white;
+  font-size: 9px;
+  padding: 3px;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-left: 16px;
+}
+.header2 .header_title .rank_name {
+  color: black;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 24px;
+}
+.header2 .header_title .rank_state {
+  color: rgb(38, 247, 38);
+  font-size: 5px;
+  margin-top: 13px;
+  padding-left: 42px;
+}
+.header2 .header_rank {
+  display: flex;
+  align-items: center;
+  /*margin-right: 250px;
+  margin-top: 47px;*/
+}
+.header2 .header_option {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 12px;
+  width: 250px;
+  margin-top: 50px;
+}
+.header2 .header_option .name {
+  font-weight: bold;
+}
+.header2 .header_option .info {
+  text-decoration: underline;
+}
+.header2 .header_option .logout {
+  padding-right: 20px;
+}
+.header2 .header_option .fa-caret-square-down {
+  font-size: 17px;
+  color: lightgray;
+}
+nav ul {
+  display: flex;
+  padding-top: 70px;
+  padding-left: 57px;
+  font-family: "Nanum Gothic", sans-serif;
+  margin: 0;
+}
+nav ul .menu_left {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 7px;
+}
+nav ul .menu_right {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(194, 189, 189);
+  padding-left: 170px;
+}
+.hr2 {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+.mymusic .contents h2 {
+  padding-left: 60px;
+  padding-top: 10px;
+}
+.mymusic .contents .mymusic_list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.mymusic .mymusic_list {
+  border-collapse: collapse;
+  background-color: rgb(243, 241, 241);
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  margin-left: 82px;
+  border-top: 3px solid gray;
+  border-bottom: 1px solid white;
+  position: relative; /*상대적 위치 정하기*/
+  left: -1.9%; /* 방향설정*/
+}
+.mymusic td {
+  border: 1px solid lightgray;
+  padding: 15px 5px 10px 5px;
+  text-align: center; /*표 내부의 글자정렬*/
+}
+.mymusic td:nth-child(1) {
+  width: 70px;
+  background-color: white;
+  border-bottom: 1px solid white;
+}
+.mymusic td:nth-child(2) {
+  width: 100px;
+}
+.mymusic td:nth-child(3) {
+  width: 130px;
+}
+.mymusic td:nth-child(4) {
+  width: 100px;
+}
+.mymusic td:nth-child(5) {
+  width: 100px;
+}
+.mymusic td:nth-child(6) {
+  width: 130px;
+}
+.mymusic td:nth-child(7) {
+  width: 80px;
+}
+.mymusic td:nth-child(8) {
+  width: 140px;
+}
+.mymusic td:nth-child(9) {
+  width: 80px;
+}
+
+.mymusic .contents .mymusic_second {
+  /* 뒷배경 박스, 배경사진 넣어주기*/
+  margin-top: 5px;
+  border: 1px solid lightgray;
+  background-color: wheat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 998px;
+  height: 260px;
+  position: relative;
+  left: 5.5%;
+  opacity: 90%;
+  background-image: url(https://images.unsplash.com/photo-1461902269707-fa102de8de65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+}
+.mymusic .contents .mymusic_second .white {
+  width: 998px;
+  height: 60px;
+  position: absolute;
+  color: white;
+  opacity: 80%;
+}
+.mymusic .contents .mymusic_second .mymusic_contents {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 20%;
+  height: 50px;
+  color: white;
+}
+.mymusic .contents .mymusic_second .mymusic_contents .one {
+  position: absolute;
+  width: 800px;
+  top: 200%;
+}
+.mymusic .contents .mymusic_second .mymusic_contents .two {
+  position: absolute;
+  width: 800px;
+  top: 270%;
+  font-size: 20px;
+}
+.mymusic .contents .mymusic_second .mymusic_contents .three {
+  position: absolute;
+  top: 340%;
+  width: 800px;
+  color: rgb(231, 231, 231);
+}
+.mymusic .contents .mymusic_second .mymusic_contents .four {
+  position: absolute;
+  top: 437%;
+  font-size: 13px;
+  color: black;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+}
+
+.mymusic .contents .mymusic_second .mymusic_profile {
+  width: 130px;
+  border: 4px solid white;
+  position: absolute;
+  left: 4%;
+  top: 42%;
+}
+.mymusic .contents .mymusic_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 998px;
+  margin-left: 59px;
+  border: 1px solid lightgray;
+  border-top: 0px;
+  height: 40px;
+}
+.mymusic .contents .mymusic_bottom .profile_setting2 {
+  border: 1px solid lightgray;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Nanum Gothic", sans-serif;
+  border-radius: 5%;
+  margin: 0 32px;
+}
+.mymusic .contents .mymusic_bottom .fa-cog {
+  color: gray;
+}
+.mymusic .contents .mymusic_bottom .mymusic_right {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  display: flex;
+  color: gray;
+}
+.myplaylist {
+  position: relative;
+}
+.myplaylist .line_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding-top: 30px;
+  padding-left: 52px;
+  width: 800px;
+}
+.myplaylist .line_1 .fa-minus {
+  transform: rotate(90deg);
+  color: rgb(57, 216, 25);
+  font-size: 20px;
+}
+.myplaylist .line_1 .all_see {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  color: gray;
+  position: relative;
+
+  right: 80px;
+}
+.myplaylist .line_1 .fa-chevron-right {
+  font-size: 2px;
+  color: rgb(51, 189, 24); /*색 조정*/
+}
+.myplaylist .hr3 {
+  width: 720px;
+  margin-left: 60px;
+}
+
+.myplaylist .merge_playlist {
+  display: flex;
+  flex-direction: row;
+}
+.myplaylist div .playlist_1 {
+  display: flex;
+  width: 400px;
+}
+.myplaylist div .playlist_1 img {
+  width: 150px;
+  margin-left: 60px;
+  margin-top: 8px;
+}
+.myplaylist div .playlist_1 .contents_1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nanum Gothic", sans-serif;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.myplaylist div .playlist_1 .contents_1 .work_1 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 30px 0;
+  margin-bottom: 7px;
+}
+.myplaylist div .playlist_1 .contents_1 .work_2 {
+  font-size: 12px;
+  margin: 0;
+  color: gray;
+}
+.myplaylist div .playlist_1 .contents_1 .work_3 {
+  font-size: 13px;
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.myplaylist div .playlist_1 .contents_1 .work_4 {
+  width: 140px;
+  margin-bottom: 15px;
+}
+.myplaylist div .playlist_1 .contents_1 .work_5 {
+  font-size: 12px;
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.myplaylist div .playlist_1 .contents_1 .work_6 {
+  font-size: 12px;
+  color: gray;
+  margin-top: 0px;
+}
+
+.myplaylist div .playlist_2 {
+  display: flex;
+  width: 400px;
+}
+.myplaylist div .playlist_2 img {
+  width: 150px;
+  margin-left: 60px;
+  margin-top: 8px;
+}
+.myplaylist div .playlist_2 .contents_2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nanum Gothic", sans-serif;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.myplaylist div .playlist_2 .contents_2 .work_1 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 30px 0;
+  margin-bottom: 7px;
+}
+.myplaylist div .playlist_2 .contents_2 .work_2 {
+  font-size: 12px;
+  margin: 0;
+  color: gray;
+}
+.myplaylist div .playlist_2 .contents_2 .work_3 {
+  font-size: 13px;
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.myplaylist div .playlist_2 .contents_2 .work_4 {
+  width: 160px;
+  margin-bottom: 15px;
+  margin-left: 1px;
+}
+.myplaylist div .playlist_2 .contents_2 .work_5 {
+  font-size: 12px;
+  color: gray;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.myplaylist div .playlist_2 .contents_2 .work_6 {
+  font-size: 12px;
+  color: gray;
+  margin-top: 0px;
+}
+
+/* ----------------asede----------------------- */
+aside {
+  width: 280px;
+  position: relative;
+  left: 800px;
+  top: -250px;
+}
+aside .si {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
+  width: 800px;
+}
+aside .si .fa-minus {
+  transform: rotate(90deg);
+  color: rgb(57, 216, 25);
+  font-size: 20px;
+}
+aside .si .fan_allsee {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 11px;
+  color: gray;
+  padding-left: 20px;
+}
+aside .si .fa-chevron-right {
+  font-size: 2px;
+  color: rgb(51, 189, 24); /*색 조정*/
+}
+aside .hr4 {
+  width: 220px;
+  margin-left: 20px;
+  color: lightgray;
+}
+aside div img {
+  width: 100px;
+  border: 1px solid gray;
+  margin-left: 20px;
+}
+aside .crush {
+  display: flex;
+  flex-direction: row;
+}
+aside div .crush_info {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  margin-top: 0px;
+  margin-left: 12px;
+}
+aside div .crush_info .crush_1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 3px;
+}
+aside div .crush_info .crush_2 {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+aside div .crush_info .crush_3 {
+  font-size: 11px;
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+aside div .crush_info .crush_4 {
+  font-size: 12px;
+  margin-top: 0px;
+  border: 1px solid lightgray;
+  border-radius: 5%;
+  width: 65px;
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  padding: 2px 0px;
+}
+aside div .crush_info .fa-star {
+  color: rgb(231, 209, 6);
+  padding-right: 10px;
+}
+aside .crush_and {
+  display: flex;
+}
+.ranking .part_1 {
+  border-collapse: collapse;
+  background-color: rgb(252, 249, 249);
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 13px;
+  border-top: 1px solid rgb(211, 208, 208);
+  border-bottom: 1px solid white;
+  margin-left: 60px;
+  margin-top: -140px;
+}
+.ranking .part_1 td {
+  border: 1px solid rgb(231, 231, 231);
+  padding: 10px 5px 10px 5px;
+  text-align: center; /*표 내부의 글자정렬*/
+}
+.ranking .part_1 td:nth-child(1) {
+  width: 160px;
+  background-color: white;
+  border-bottom: 1px solid white;
+  border-top: 2px solid rgb(179, 179, 179);
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_1 td:nth-child(2) {
+  width: 160px;
+}
+.ranking .part_1 td:nth-child(3) {
+  font-size: 12px;
+  width: 368px;
+  color: rgb(116, 112, 112);
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: right;
+}
+.ranking .part_2 {
+  display: flex;
+  align-items: center;
+  margin-left: 67px;
+  font-size: 14px;
+}
+.ranking div .cb1 {
+  width: 12px;
+  border-radius: 20;
+  position: relative;
+}
+.ranking div .ranking_song {
+  padding-left: 5px;
+  position: relative;
+  top: -1px;
+}
+.ranking div .cb2 {
+  width: 12px;
+  border-radius: 20;
+  margin-left: 10px;
+  position: relative;
+}
+.ranking div .ranking_video {
+  padding-left: 5px;
+  position: relative;
+  top: -1px;
+}
+.ranking .hr5 {
+  width: 720px;
+  margin-left: 60px;
+  margin-top: 3px;
+  margin-bottom: 1px;
+}
+.ranking .part_3 {
+  border-collapse: collapse;
+  background-color: rgb(252, 249, 249);
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 13px;
+  border-bottom: 1px solid rgb(141, 243, 8);
+  margin-top: 2px;
+  margin-left: 49px;
+}
+
+.ranking .part_3 {
+  border-collapse: collapse;
+  background-color: rgb(255, 253, 253);
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 13px;
+  border-bottom: 3px solid white;
+}
+.ranking .part_3 .table_1 td {
+  padding: 2px 5px 2px 5px;
+  text-align: center; /*표 내부의 글자정렬*/
+  color: rgb(118, 199, 12);
+  font-size: 11px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: bold;
+}
+.ranking .hr6 {
+  width: 720px;
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 1px;
+  border-top: 2px solid rgb(122, 194, 29); /* 한줄짜리 hr에는 이렇게 적용! */
+}
+.ranking .part_3 .table_1 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_1 td:nth-child(2) {
+  width: 14px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_1 td:nth-child(3) {
+  width: 240px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_1 td:nth-child(4) {
+  width: 120px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_1 td:nth-child(5) {
+  width: 92px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: left;
+}
+.ranking .part_3 .table_1 td:nth-child(6) {
+  width: 58px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: left;
+}
+.ranking .part_3 .table_1 td:nth-child(7) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_1 td:nth-child(8) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+/* ----------------------22222222222222----------------------------------------*/
+.ranking .part_3 .table_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_2 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_2 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_2 .table_2_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_2 .table_2_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_2 .table_2_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_2 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_2 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_2 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_2 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_2 .table_2_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_2 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_2 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_2 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr7 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------3333333333333333---------------*/
+.ranking .part_3 .table_3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_3 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_3 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_3 .table_3_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_3 .table_3_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_3 .table_3_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_3 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_3 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_3 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_3 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_3 .table_3_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_3 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_3 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_3 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr8 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------44444444444444444444444---------------*/
+.ranking .part_3 .table_4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_4 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_4 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_4 .table_4_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_4 .table_4_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_4 .table_4_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_4 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_4 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_4 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_4 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_4 .table_4_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_4 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_4 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_4 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr9 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------55555555555555555---------------*/
+.ranking .part_3 .table_5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_5 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_5 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_5 .table_5_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_5 .table_5_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_5 .table_5_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_5 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_5 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_5 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_5 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_5 .table_5_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_5 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_5 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_5 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr10 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------66666666666666---------------*/
+.ranking .part_3 .table_6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_6 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_6 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_6 .table_6_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_6 .table_6_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_6 .table_6_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_6 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_6 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_6 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_6 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_6 .table_6_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_6 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_6 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_6 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr11 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------77777777777777777---------------*/
+.ranking .part_3 .table_7 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_7 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_7 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_7 .table_7_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_7 .table_7_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_7 .table_7_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_7 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_7 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_7 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_7 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_7 .table_7_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_7 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_7 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_7 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr12 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------888888888888888888---------------*/
+.ranking .part_3 .table_8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_8 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_8 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_8 .table_8_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_8 .table_8_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_8 .table_8_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_8 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_8 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_8 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_8 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_8 .table_8_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_8 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_8 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_8 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr13 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------9999999999999999---------------*/
+.ranking .part_3 .table_9 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_9 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_9 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_9 .table_9_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_9 .table_9_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_9 .table_9_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_9 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_9 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_9 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_9 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_9 .table_9_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_9 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_9 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_9 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr14 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------10---------------*/
+.ranking .part_3 .table_10 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_10 td:nth-child(1) {
+  width: 18px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_10 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_10 .table_10_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_10 .table_10_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_10 .table_10_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_10 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 40px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_10 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_10 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_10 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_10 .table_10_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_10 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_10 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_10 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr15 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*----------------------------------------11---------------*/
+.ranking .part_3 .table_11 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ranking .part_3 .table_11 td:nth-child(1) {
+  width: 3px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 15px;
+}
+.ranking .part_3 .table_11 td:nth-child(2) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 4px;
+}
+.ranking .part_3 .table_11 .table_11_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-size: 12px;
+  padding-left: 12px;
+}
+.ranking .part_3 .table_11 .table_11_1 .fa-play-circle {
+  font-size: 23px;
+  color: rgb(122, 194, 29);
+  padding-left: 17px;
+}
+.ranking .part_3 .table_11 .table_11_1 .fa-plus-circle {
+  font-size: 23px;
+  color: rgb(228, 227, 227);
+  padding-left: 5px;
+}
+.ranking .part_3 .table_11 td:nth-child(3) {
+  width: 220px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  padding-left: 47px;
+  color: rgb(99, 98, 98);
+}
+.ranking .part_3 .table_11 td:nth-child(4) {
+  width: 90px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_11 td:nth-child(5) {
+  width: 98px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_11 td:nth-child(6) {
+  width: 85px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.ranking .part_3 .table_11 .table_11_2 {
+  /* 좋아요 : 하트랑 숫자묶음*/
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-top: px;
+}
+.ranking .part_3 .table_11 .fa-gratipay {
+  /* 좋아요 : 하트랑*/
+  color: rgb(214, 211, 211);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.ranking .part_3 .table_11 td:nth-child(7) {
+  width: 28px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+  color: rgb(199, 197, 197);
+  padding-right: 20px;
+}
+.ranking .part_3 .table_11 td:nth-child(8) {
+  width: 50px;
+  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(199, 197, 197);
+}
+.ranking .part_3 .hr16 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 10px;
+}
+/*-------------------------------------------------------END --------------------------------------------*/
+.ranking .part_5 {
+  padding-left: 60px;
+}
+.ranking .part_5 button {
+  border: 1px solid lightgray;
+  font-size: 11px;
+  padding: 2px 4px;
+}
+.ranking .part_5 i {
+  color: rgb(122, 194, 29);
+}
+.ranking .hr17 {
+  width: 720px;
+  margin: 3px;
+  margin-left: 58px;
+  margin-top: 8px;
+}
+.guest_book .my_playlist .fa-minus {
+  transform: rotate(90deg);
+  color: rgb(57, 216, 25);
+  font-size: 20px;
+}
+.guest_book .my_playlist {
+  padding-top: 20px;
+  padding-left: 52px;
+  margin-bottom: 10px;
+}
+.guest_book .guestbook_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 720px;
+  height: 100px;
+  background-color: rgb(248, 246, 246);
+  margin-left: 58px;
+  padding-top: 0px;
+}
+.guest_book .guestbook_box img {
+  width: 50px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.guest_book div .guestbook_record {
+  width: 800px;
+  height: 60px;
+}
+.guest_book div .guestbook_submit {
+  width: 102px;
+  height: 82px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.guest_book .guestbook_box .secret {
+  position: relative;
+  top: 75px;
+  right: px;
+  width: px;
+}
+.guest_book .guestbook_box .secret_record {
+  margin-right: 8px;
+}
+.guest_book .guestbook_box .secret_btn {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-family: "Nanum Gothic", sans-serif;
+  width: 120px;
+  height: 30px;
+  position: relative;
+  top: 28%;
+  right: 0%;
+  padding-left: 10px;
+}
+footer .hr18 {
+  width: 1200px;
+  margin-top: 100px;
+  margin-left: 0px;
+}
+footer .last {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: right;
+  color: rgb(160, 160, 160);
+  font-size: 13px;
+  font-weight: bold;
+}
+footer .last1 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+}
+footer .last2 {
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(160, 160, 160);
+  margin-bottom: 3px;
+  font-size: 11px;
+}
+footer .last3 {
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(160, 160, 160);
+  margin: 5px 0px;
+  font-size: 11px;
+}

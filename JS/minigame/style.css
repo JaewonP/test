@@ -1,0 +1,17 @@
+header {
+  margin: 0;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+}
+header .secondfloor {
+  display: flex;
+  justify-content: center;
+}
+header .secondfloor .imgitem {
+  height: ;
+}
+header .secondfloor .textitem {
+  font-size: 20px;
+}

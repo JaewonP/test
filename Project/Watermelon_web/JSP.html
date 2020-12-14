@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- session.jsp -->
+  <%
+    session.setAttribute("mySessionName", "mySessionData");
+    session.setAttribute("myNum", "12345")
+  %>
+
+  <!-- sessionget.jsp -->
+  <%
+    Object obj1 = session.getAttribute("mySessionName");
+    String mySessionName = (String)obj1;
+    out.println(mySessionName + "<br />");
+
+    object obj2 = session.getAttribute("myNum");
+    Integer myNum = (Integer)obj2;
+    out.println(myNum + "<br />");
+
+    String sName;        // name들을 모두 불러오기위함
+    String sValue;
+    Enumeration enumeration = session.getAttributeNames(); 
+    while(enumeration.hasMoreElements()){
+      sName = enumeration.nextElement().toString();
+      sValue = session.getAttribute(sName).toString();
+      out.println("sName: " + sName + "<br />");
+      out.println("sValue: " + sValue + "<br />");
+    }
+
+    <!-- 세션 예제 _ 로그인하기 -->
+      <!-- html파일 -->
+      <form action="loginOk.jsp" method = "post">
+        아이디: <input type="text" name="id" size="10"><br />
+        비밀번호 : <input type="password" name="pw" size="10"><br />
+        <input type="submit" value = "로그인">
+      </form>
+
+      <!-- jsp파일 -->
+      <%! 
+        String id, pw;
+      %>
+
+      <%
+        id = request.getParameter("id");
+        pw = request.getParameter("pw");
+
+        if(id.equals("abcde") && pw.equals("12345")){
+          session.setAttribute("id", id);
+          response.sendRedirect("welcome.jsp")
+        } else {
+          response.sendRedirect("login.html");
+        }
+      %>
+  %>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+ul {
+  list-style: none;
+}
+button,
+button:focus {
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+header {
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+header .logo {
+  display: flex;
+  justify-content: ;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Baloo Tamma 2", cursive;
+}
+header .logo .fa-youtube {
+  color: red;
+  font-size: 30px;
+  margin-right: 5px;
+}
+header .maganddot {
+  display: flex;
+  align-items: center;
+}
+header .maganddot .fa-search {
+  margin-right: 20px;
+}
+header .maganddot .fa-ellipsis-v {
+  margin-right: 10px;
+}
+.player {
+  background-color: black;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+.player video {
+  width: 100%;
+  max-width: 1000px;
+}
+.info .hashtag {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  margin: 5px 3px;
+}
+.info .hashtag li {
+  margin-right: 10px;
+  color: blue;
+  font-size: 12px;
+}
+.info .titleandBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.info .titleandBtn .title {
+  font-size: 15px;
+  font-family: "Noto Sans KR";
+}
+.info .titleandBtn .title.clamp{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.info .titleandBtn button {
+  outline: none;
+  height: 100%;
+  transition: transform 300ms ease-in-out;
+}
+.info .titleandBtn button.clicked {
+    transform: rotate(180deg);
+}
+.info .watching {
+  font-size: 10px;
+  color: grey;
+}
+.info .action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 0;
+}
+.info .action button {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: grey;
+}
+.info .action button .active {
+  color: blue;
+}
+.info .action button i {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
+  margin: 0 auto;
+}
+.chinfo {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 8px;
+}
+.chinfo .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.chinfo img {
+  width: 50px;
+  border-radius: 50%;
+}
+.chinfo .lefttitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-family: "Noto Sans KR";
+}
+.chinfo .lefttitle .chname {
+  font-weight: bold;
+}
+.chinfo .lefttitle .subscriber {
+    font-size: 12px;
+    color: gray;
+  }
+.chinfo .subscribe {
+  color: red;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+.upnext2 {
+  padding: 0 3px;
+}
+
+.upnext {
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  margin: 5px 0;
+  color: darkgray;
+}
+.upnext2 .flexbox {
+  display: flex;
+  padding-left: 2px;
+  padding-right: 3px;
+  align-items: flex-start;
+}
+.upnext2 .flexbox .span {
+  display: flex;
+  flex-direction: column;
+}
+.upnext2 .flexbox .img img {
+  width: 100%;
+}
+.upnext2 .flexbox .img {
+  flex: 1 1 35%;
+  margin-bottom: 3px;
+  margin-right: 5px;a
+}
+.upnext2 .flexbox .span {
+  flex: 1 1 60%;
+}
+.upnext2 .flexbox .span .ch {
+  font-family: "Noto Sans KR";
+  font-size: 13px;
+}
+.upnext2 .flexbox .span .view {
+  font-family: "Noto Sans KR";
+  font-size: 10px;
+  color: gray;
+}
+.upnext2 .flexbox .span .ssul {
+  font-family: "Noto Sans KR";
+  font-size: 12px;
+  line-height: 1.1;
+}
+.upnext2 .flexbox i.fa-ellipsis-v {
+  flex: 1 1 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+.middleandupnext2{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    .middleandupnext2{
+        flex-direction: row;
+        margin: 0 10px;
+    }
+}

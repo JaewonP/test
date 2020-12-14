@@ -1,0 +1,12 @@
+.js-clock {
+  position: relative;
+}
+.js-clock .time {
+  position: absolute;
+  left: 280px;
+  bottom: 140px;
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
